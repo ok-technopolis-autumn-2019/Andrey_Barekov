@@ -1,9 +1,7 @@
 .todo-main__controls {
   height: 50px;
 
-  background: #FFFFFF;
-
-  border-bottom: #E6E6E6 1px inset;
+  border-bottom: inset #E6E6E6 1px;
 }
 
 .select-all__button {
