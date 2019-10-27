@@ -1,0 +1,49 @@
+.todo-main__actions {
+  position: sticky;
+  display: flex;
+
+  bottom: 0;
+
+  justify-content: space-between;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.actions__item,
+.actions__item-clear {
+  display: flex;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+
+  line-height: 1.2;
+  align-items: center;
+  color: #888888;
+}
+
+.actions__item-clear {
+  background: #FFFFFF;
+
+  border: none;
+}
+
+.actions__item-filter {
+  position: absolute;
+
+  left: 37.5%;
+}
+
+.actions__item .item-filter__input {
+  position: absolute;
+
+  left: -32768px;
+}
+
+.item-filter__item {
+  padding-left: 5px;
+  padding-right: 5px;
+
+  border: solid transparent 1px;
+}

@@ -1,0 +1,44 @@
+.todo-main {
+  position: relative;
+
+  width: 80%;
+  min-width: 480px;
+  max-width: 580px;
+
+  margin: 0 auto;
+}
+
+.todo-main:before {
+  position: absolute;
+
+  top: 100%;
+  left: 2px;
+  right: 2px;
+  z-index: -1;
+
+  height: 6px;
+
+  content: ' ';
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.todo-main:after {
+  position: absolute;
+
+  top: 100%;
+  left: 4px;
+  right: 4px;
+  z-index: -2;
+
+  height: 12px;
+
+  content: ' ';
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.todo-main__frame {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
