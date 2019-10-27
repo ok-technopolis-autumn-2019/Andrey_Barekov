@@ -4,74 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <title>Todos</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="todo-main">
 
     <header class="todo-main__header">
-      <h1 class="title">Todos</h1>
+      <h1 class="title">todos</h1>
+      <br>
     </header>
 
     <main class="todo-main__frame">
       <section class="todo-main__controls">
-        <div class="controls__select-all">
-          <button class="select-all__button">
-            Select all tasks
-          </button>
-        </div>
-
-        <div class="controls__create-new">
+        <div class="controls">
+          <button class="select-all__button" aria-label="Select all tasks"></button>
           <input type="text" class="create-new__input" placeholder="What is to be done?" aria-label="Add new item"/>
         </div>
       </section>
 
       <section class="todo-main__tasks">
-        <ul class="tasks__list">
-          <li class="tasks__item">
-            <div class="item__view">
-              <input type="checkbox" class="item__status" checked="checked" aria-label="Completed: HTML"/>
-              <span class="item__text">HTML</span>
-              <button class="item__delete">Delete</button>
-            </div>
-            <div class="item__edit">
-              <input type="text" class="item__input" value="HTML" aria-label="Edit: HTML"/>
-            </div>
-          </li>
-
-          <li class="tasks__item">
-            <div class="item__view">
-              <input type="checkbox" class="item__status" aria-label="Not completed: CSS"/>
-              <span class="item__text">CSS</span>
-              <button class="item__delete">Delete</button>
-            </div>
-            <div class="item__edit">
-              <input type="text" class="item__input" value="CSS" aria-label="Edit: CSS"/>
-            </div>
-          </li>
-
-          <li class="tasks__item">
-            <div class="item__view">
-              <input type="checkbox" class="item__status" aria-label="Not completed: JS"/>
-              <span class="item__text">JS</span>
-              <button class="item__delete">Delete</button>
-            </div>
-            <div class="item__edit">
-              <input type="text" class="item__input" value="JS" aria-label="Edit: JS"/>
-            </div>
-          </li>
-
-          <li class="tasks__item">
-            <div class="item__view">
-              <input type="checkbox" class="item__status" aria-label="Not completed: JS tools"/>
-              <span class="item__text">HTML</span>
-              <button class="item__delete">Delete</button>
-            </div>
-            <div class="item__edit">
-              <input type="text" class="item__input" value="JS tools" aria-label="Edit: JS tools"/>
-            </div>
-          </li>
-        </ul>
+        <div class="task-block">
+          <input class="task__checkbox" type="checkbox" aria-label="HTML" id="HTML-checkbox">
+          <label class="task" for="HTML-checkbox"></label>
+          <span class="task__text">HTML</span>
+          <button class="task__delete" aria-label="delete-task"></button>
+        </div>
+        <div class="task-block">
+          <input class="task__checkbox" type="checkbox" aria-label="CSS" id="CSS-checkbox">
+          <label class="task" for="CSS-checkbox"></label>
+          <span class="task__text">CSS</span>
+          <button class="task__delete" aria-label="delete-task"></button>
+        </div>
+        <div class="task-block">
+          <input class="task__checkbox" type="checkbox" aria-label="JS" id="JS-checkbox">
+          <label class="task" for="JS-checkbox"></label>
+          <span class="task__text">JS</span>
+          <button class="task__delete" aria-label="delete-task"></button>
+        </div>
+        <div class="task-block">
+          <input class="task__checkbox" type="checkbox" aria-label="JS tools" id="JST-checkbox">
+          <label class="task" for="JST-checkbox"></label>
+          <span class="task__text">JS tools</span>
+          <button class="task__delete" aria-label="delete-task"></button>
+        </div>
+        <div class="task-block"></div>
       </section>
 
       <section class="todo-main__actions">
@@ -97,7 +76,7 @@
         </div>
 
         <div class="actions__item">
-          <button class="item__clear">Clear</button>
+          <button class="actions__item-clear">Clear</button>
         </div>
       </section>
     </main>
