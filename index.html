@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Todos</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +14,6 @@
 
     <header class="todo-main__header">
       <h1 class="title">todos</h1>
-      <br>
     </header>
 
     <main class="todo-main__frame">
@@ -60,16 +59,16 @@
 
         <div class="actions__item">
           <div class="actions__item-filter" role="group" aria-label="Filter by status">
+            <input type="radio" class="item-filter__input" name="filter" checked="checked" value="all"/>
             <label class="item-filter__item">
-              <input type="radio" class="item-filter__input" name="filter" checked="checked" value="all"/>
               <span class="item-filter__text" aria-label="Select all">All</span>
             </label>
+            <input type="radio" class="item-filter__input" name="filter" value="active"/>
             <label class="item-filter__item">
-              <input type="radio" class="item-filter__input" name="filter" value="active"/>
               <span class="item-filter__text" aria-label="Select all">Active</span>
             </label>
+            <input type="radio" class="item-filter__input" name="filter" value="completed"/>
             <label class="item-filter__item">
-              <input type="radio" class="item-filter__input" name="filter" value="completed"/>
               <span class="item-filter__text" aria-label="Select all">Completed</span>
             </label>
           </div>
